@@ -1,7 +1,14 @@
-let main = document.querySelector('main')
-let envelope = document.querySelector('.envelope')
-let letter = document.querySelector('.letter')
+const openLetterClasName = 'open-letter'
+const closeLetterClasName = 'close-letter'
+let main = document.querySelector('main');
+let envelope = document.querySelector('.envelope');
 
 envelope.addEventListener('click', () => {
-    main.classList.toggle('open-letter')
-})
+    if(main.classList.contains('open-letter')){
+        main.classList.add(closeLetterClasName);
+        main.classList.remove(openLetterClasName);
+    }else{
+        main.classList.add(openLetterClasName);
+        main.classList.remove(closeLetterClasName);
+    }
+});
