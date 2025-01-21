@@ -29,15 +29,6 @@
   }
 }
 
-@keyframes shrink-shadow {
-  0% {
-    width: 400px;
-  }
-  100% {
-    width: 250px;
-  }
-}
-
 @keyframes move-letter-upfront {
   0% {
     z-index: 3;
@@ -65,10 +56,6 @@
     move-letter-upfront 0.5s 1.2s forwards;
 }
 
-.open-letter .shadow {
-  animation: shrink-shadow 0.4s forwards;
-}
-
 /*WHEN IT'S CLOSING*/
 @keyframes move-envelope-up {
   0% {
@@ -87,15 +74,6 @@
   100% {
     transform: rotateX(0deg);
     z-index: 2;
-  }
-}
-
-@keyframes grow-shadow {
-  0% {
-    width: 250px;
-  }
-  100% {
-    width: 400px;
   }
 }
 
@@ -133,10 +111,6 @@
 .close-letter .animated-mail .letter {
   animation: move-letter-backwards 0.8s forwards,
     shrink-letter 0.8s 0.8s forwards;
-}
-
-.close-letter .shadow {
-  animation: grow-shadow 0.4s forwards;
 }
 
 .close-letter .animated-mail .top-fold {
