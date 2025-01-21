@@ -90,15 +90,6 @@
   }
 }
 
-@keyframes shrink-letter {
-  0% {
-    height: 180px;
-  }
-  100% {
-    height: 60px;
-  }
-}
-
 @keyframes grow-shadow {
   0% {
     width: 250px;
@@ -108,13 +99,40 @@
   }
 }
 
+@keyframes shrink-letter {
+  0% {
+    height: 180px;
+  }
+  100% {
+    bottom: 0px;
+    height: 60px;
+  }
+}
+
+@keyframes move-letter-backwards {
+  0% {
+    bottom: -30vh;
+    z-index: 5;
+    width: 50vw;
+    position: absolute;
+    left: -18vw;
+    height: 85vh;
+  }
+  100% {
+    z-index: 2;
+    height: 180px;
+    bottom: 100%;
+  }
+}
+
 .close-letter .animated-mail {
   animation: move-envelope-up 0.8s forwards;
   /**animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
 
 .close-letter .animated-mail .letter {
-  animation: shrink-letter 0.8s forwards;
+  animation: move-letter-backwards 0.8s forwards,
+    shrink-letter 0.8s 0.8s forwards;
 }
 
 .close-letter .shadow {
@@ -122,5 +140,5 @@
 }
 
 .close-letter .animated-mail .top-fold {
-  animation: close-top-fold 0.4 1.6s;
+  animation: close-top-fold 0.4 4.5s;
 }
