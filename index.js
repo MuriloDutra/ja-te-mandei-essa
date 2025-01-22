@@ -15,3 +15,8 @@ function handleEnvelopeClick() {
 function handleLetterClick(event) {
   event.stopPropagation();
 }
+
+function showMusic() {
+  let musicContainer = document.querySelector(".music-container");
+  musicContainer.classList.toggle("show-music-card");
+}

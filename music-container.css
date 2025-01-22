@@ -1,0 +1,36 @@
+@keyframes show-music {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 350px;
+  }
+}
+
+.music-card {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  height: 100px;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  overflow: hidden; /* Hide content when width is 0 */
+  width: 0px; /* Initial width is 0 */
+  visibility: hidden; /* Initially hidden */
+  transition: visibility 0.4s, width 0.4s ease; /* Smooth visibility and width changes */
+}
+
+.music-card img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  max-width: 100px;
+  object-fit: cover;
+}
+
+.show-music-card .music-card {
+  animation: show-music 0.4s forwards;
+  visibility: visible; /* Show card when animation starts */
+}

@@ -13,9 +13,19 @@
 
     <link rel="stylesheet" href="letter.css" />
     <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="music-container.css" />
   </head>
   <body>
     <main>
+      <section class="music-container">
+        <div class="music-card">
+          <img src="assets/ei-coisinha.jpeg" />
+          <div>
+            <p id="music-name">MUSIC</p>
+            <p id="artist">MUSIC</p>
+          </div>
+        </div>
+      </section>
       <div class="envelope" onclick="handleEnvelopeClick(event)">
         <div class="animated-mail">
           <div class="back-fold"></div>
@@ -29,13 +39,14 @@
             <section class="content">
               <h1>Já te mandei essa?</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                tincidunt maximus massa, sed consequat purus dignissim a. Nunc
-                vitae neque id quam molestie ornare id at tellus. Vestibulum
-                eget metus ex. Suspendisse semper tempor dolor, ut finibus diam
-                laoreet a. Duis sed pharetra urna. Quisque rutrum ut tortor in
-                volutpat. Sed efficitur ligula felis, ultricies euismod risus
-                suscipit eu. Phasellus vitae eros nec urna blandit congue.
+                <span onclick="showMusic('Lorem')">Lorem</span> ipsum dolor sit
+                amet, consectetur adipiscing elit. Proin tincidunt maximus
+                massa, sed consequat purus dignissim a. Nunc vitae neque id quam
+                molestie ornare id at tellus. Vestibulum eget metus ex.
+                Suspendisse semper tempor dolor, ut finibus diam laoreet a. Duis
+                sed pharetra urna. Quisque rutrum ut tortor in volutpat. Sed
+                efficitur ligula felis, ultricies euismod risus suscipit eu.
+                Phasellus vitae eros nec urna blandit congue.
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
