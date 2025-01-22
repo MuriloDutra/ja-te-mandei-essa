@@ -3,21 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <title>Já te mandei essa?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="letter.css" />
     <link rel="stylesheet" href="animations.css" />
   </head>
   <body>
     <main>
-      <div class="envelope">
+      <div class="envelope" onclick="handleEnvelopeClick(event)">
         <div class="animated-mail">
           <div class="back-fold"></div>
-          <div class="letter">
+          <div class="letter" onclick="handleLetterClick(event)">
             <div class="letter-border"></div>
-            <div class="letter-title"></div>
-            <div class="letter-context"></div>
-            <div class="letter-stamp">
-              <div class="letter-stamp-inner"></div>
-            </div>
+            <section class="button-container">
+              <button onclick="handleEnvelopeClick(event)">
+                to-do: X and favicon
+              </button>
+            </section>
+            <section class="content">
+              <h1>Já te mandei essa?</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tincidunt maximus massa, sed consequat purus dignissim a. Nunc
+                vitae neque id quam molestie ornare id at tellus. Vestibulum
+                eget metus ex. Suspendisse semper tempor dolor, ut finibus diam
+                laoreet a. Duis sed pharetra urna. Quisque rutrum ut tortor in
+                volutpat. Sed efficitur ligula felis, ultricies euismod risus
+                suscipit eu. Phasellus vitae eros nec urna blandit congue.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tincidunt maximus massa, sed consequat purus dignissim a. Nunc
+                vitae neque id quam molestie ornare id at tellus. Vestibulum
+                eget metus ex. Suspendisse semper tempor dolor, ut finibus diam
+                laoreet a. Duis sed pharetra urna. Quisque rutrum ut tortor in
+                volutpat. Sed efficitur ligula felis, ultricies euismod risus
+                suscipit eu. Phasellus vitae eros nec urna blandit congue.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tincidunt maximus massa, sed consequat purus dignissim a. Nunc
+                vitae neque id quam molestie ornare id at tellus. Vestibulum
+                eget metus ex. Suspendisse semper tempor dolor, ut finibus diam
+                laoreet a. Duis sed pharetra urna. Quisque rutrum ut tortor in
+                volutpat. Sed efficitur ligula felis, ultricies euismod risus
+                suscipit eu. Phasellus vitae eros nec urna blandit congue.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tincidunt maximus massa, sed consequat purus dignissim a. Nunc
+                vitae neque id quam molestie ornare id at tellus. Vestibulum
+                eget metus ex. Suspendisse semper tempor dolor, ut finibus diam
+                laoreet a. Duis sed pharetra urna. Quisque rutrum ut tortor in
+                volutpat. Sed efficitur ligula felis, ultricies euismod risus
+                suscipit eu. Phasellus vitae eros nec urna blandit congue.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br /><br />Proin tincidunt maximus massa, sed consequat purus
+                dignissim a.
+              </p>
+            </section>
           </div>
           <div class="top-fold"></div>
           <div class="body"></div>

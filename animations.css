@@ -36,9 +36,9 @@
   100% {
     bottom: -30vh;
     z-index: 5;
-    width: 50vw;
+    width: 60vw;
     position: absolute;
-    left: -18vw;
+    left: -22vw;
     height: 85vh;
   }
 }
@@ -91,7 +91,7 @@
   0% {
     bottom: -30vh;
     z-index: 5;
-    width: 50vw;
+    width: 60vw;
     position: absolute;
     left: -18vw;
     height: 85vh;
