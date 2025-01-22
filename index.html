@@ -19,10 +19,10 @@
     <main>
       <section class="music-container">
         <div class="music-card">
-          <img src="assets/ei-coisinha.jpeg" />
+          <img src="#" id="song-image" alt="" />
           <div>
-            <p id="music-name">MUSIC</p>
-            <p id="artist">MUSIC</p>
+            <p id="song-name"></p>
+            <p id="artist"></p>
           </div>
         </div>
       </section>
@@ -39,14 +39,24 @@
             <section class="content">
               <h1>Já te mandei essa?</h1>
               <p>
-                <span onclick="showMusic('Lorem')">Lorem</span> ipsum dolor sit
-                amet, consectetur adipiscing elit. Proin tincidunt maximus
-                massa, sed consequat purus dignissim a. Nunc vitae neque id quam
-                molestie ornare id at tellus. Vestibulum eget metus ex.
-                Suspendisse semper tempor dolor, ut finibus diam laoreet a. Duis
-                sed pharetra urna. Quisque rutrum ut tortor in volutpat. Sed
-                efficitur ligula felis, ultricies euismod risus suscipit eu.
-                Phasellus vitae eros nec urna blandit congue.
+                <span
+                  onmouseover="toggleSongCard('ei, coisinha!')"
+                  onmouseleave="toggleSongCard('ei, coisinha!')"
+                  >Lorem</span
+                >
+                ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tincidunt maximus massa, sed
+                <span
+                  onmouseover="toggleSongCard('Alegre Menina')"
+                  onmouseleave="toggleSongCard('Alegre Menina')"
+                  >consequat</span
+                >
+                purus dignissim a. Nunc vitae neque id quam molestie ornare id
+                at tellus. Vestibulum eget metus ex. Suspendisse semper tempor
+                dolor, ut finibus diam laoreet a. Duis sed pharetra urna.
+                Quisque rutrum ut tortor in volutpat. Sed efficitur ligula
+                felis, ultricies euismod risus suscipit eu. Phasellus vitae eros
+                nec urna blandit congue.
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

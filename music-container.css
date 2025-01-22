@@ -34,3 +34,17 @@
   animation: show-music 0.4s forwards;
   visibility: visible; /* Show card when animation starts */
 }
+
+@keyframes hide-music {
+  0% {
+    width: 350px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+.hide-music-card .music-card {
+  animation: hide-music 0.4s forwards;
+  visibility: hidden; /* Show card when animation starts */
+}
