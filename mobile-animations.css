@@ -1,6 +1,6 @@
-@media (min-width: 769px) {
+@media (max-width: 768px) {
   /*WHEN IT'S OPENING*/
-  @keyframes move-envelope-down {
+  @keyframes move-envelope-down-mobile {
     0% {
       transform: translateY(0);
     }
@@ -9,7 +9,7 @@
     }
   }
 
-  @keyframes open-top-fold {
+  @keyframes open-top-fold-mobile {
     0% {
       transform: rotateX(0);
       z-index: 2;
@@ -20,7 +20,7 @@
     }
   }
 
-  @keyframes grow-letter {
+  @keyframes grow-letter-mobile {
     0% {
       height: 60px;
     }
@@ -30,35 +30,57 @@
     }
   }
 
-  @keyframes move-letter-upfront {
+  @keyframes move-letter-upfront-mobile {
     0% {
       z-index: 3;
     }
     100% {
       bottom: -30vh;
       z-index: 5;
-      width: 65vw;
+      width: 85vw;
       position: absolute;
-      left: -25vw;
-      height: 87vh;
+      left: -15.5vw;
+      height: 85vh;
     }
   }
 
+  p,
+  h1,
+  button {
+    font-size: 15px;
+  }
+
+  .content {
+    height: auto;
+  }
+
+  .animated-mail .letter {
+    overflow-y: auto;
+  }
+
+  /* Cancel desktop animations */
+  .open-letter .animated-mail,
+  .open-letter .animated-mail .top-fold,
+  .open-letter .animated-mail .letter {
+    animation: none; /* Cancel desktop animations */
+  }
+
+  /* Apply mobile-specific animations */
   .open-letter .animated-mail {
-    animation: move-envelope-down 0.4s forwards;
+    animation: move-envelope-down-mobile 0.4s forwards;
   }
 
   .open-letter .animated-mail .top-fold {
-    animation: open-top-fold 0.4s 0.4s forwards;
+    animation: open-top-fold-mobile 0.4s 0.4s forwards;
   }
 
   .open-letter .animated-mail .letter {
-    animation: grow-letter 0.4s 0.8s forwards,
-      move-letter-upfront 0.5s 1.2s forwards;
+    animation: grow-letter-mobile 0.4s 0.8s forwards,
+      move-letter-upfront-mobile 0.5s 1.2s forwards;
   }
 
   /*WHEN IT'S CLOSING*/
-  @keyframes move-envelope-up {
+  @keyframes move-envelope-up-mobile {
     0% {
       transform: translateY(50px);
     }
@@ -67,7 +89,7 @@
     }
   }
 
-  @keyframes close-top-fold {
+  @keyframes close-top-fold-mobile {
     0% {
       transform: rotateX(180deg);
       z-index: 0;
@@ -78,7 +100,7 @@
     }
   }
 
-  @keyframes shrink-letter {
+  @keyframes shrink-letter-mobile {
     0% {
       height: 180px;
     }
@@ -88,13 +110,13 @@
     }
   }
 
-  @keyframes move-letter-backwards {
+  @keyframes move-letter-backwards-mobile {
     0% {
       bottom: -30vh;
       z-index: 5;
-      width: 65vw;
+      width: 60vw;
       position: absolute;
-      left: -25vw;
+      left: -18vw;
       height: 85vh;
     }
     100% {
@@ -105,16 +127,16 @@
   }
 
   .close-letter .animated-mail {
-    animation: move-envelope-up 0.8s forwards;
+    animation: move-envelope-up-mobile 0.8s forwards;
     /**animation: name duration timing-function delay iteration-count direction fill-mode;*/
   }
 
   .close-letter .animated-mail .letter {
-    animation: move-letter-backwards 0.8s forwards,
-      shrink-letter 0.8s 0.8s forwards;
+    animation: move-letter-backwards-mobile 0.8s forwards,
+      shrink-letter-mobile 0.8s 0.8s forwards;
   }
 
   .close-letter .animated-mail .top-fold {
-    animation: close-top-fold 0.4 4.5s;
+    animation: close-top-fold-mobile 0.4 4.5s;
   }
 }
