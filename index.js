@@ -2,47 +2,47 @@ const songs = [
   {
     name: "ei, coisinha!",
     artist: "Clara Valverde",
-    image: "assets/ei-coisinha.jpeg",
+    image: "images/ei-coisinha.jpeg",
   },
   {
     name: "Alegre Menina",
     artist: "Dori Caymmi",
-    image: "assets/alegre-menina.jpg",
+    image: "images/alegre-menina.jpg",
   },
   {
     name: "Mutante",
     artist: "Rita Lee",
-    image: "assets/mutante.jpg",
+    image: "images/mutante.jpg",
   },
   {
     name: "Tatuagem",
     artist: "Chico Buarque",
-    image: "assets/tatuagem.jpg",
+    image: "images/tatuagem.jpg",
   },
   {
     name: "burburinho",
     artist: "Clara Valverde",
-    image: "assets/ei-coisinha.jpeg",
+    image: "images/ei-coisinha.jpeg",
   },
   {
     name: "Baby 95",
     artist: "Liniker",
-    image: "assets/baby95.jpg",
+    image: "images/baby95.jpg",
   },
   {
     name: "Muito",
     artist: "Caetano Veloso",
-    image: "assets/muito.jpg",
+    image: "images/muito.jpg",
   },
   {
     name: "La Belle De Jour",
     artist: "Alceu Valença",
-    image: "assets/la-belle-de-jour.jpg",
+    image: "images/la-belle-de-jour.jpg",
   },
   {
     name: "Sick Love",
     artist: "Red Hot Chili Peppers",
-    image: "assets/sick-love.jpg",
+    image: "images/sick-love.jpg",
   },
 ];
 
