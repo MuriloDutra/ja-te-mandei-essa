@@ -46,6 +46,10 @@ const songs = [
   },
 ];
 
+function isTouchDevice() {
+  return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+}
+
 function handleEnvelopeClick() {
   const openLetterClasName = "open-letter";
   const closeLetterClasName = "close-letter";
@@ -87,4 +91,9 @@ function toggleSongCard(song) {
     musicContainer.classList.add(showMusicClassName);
     musicContainer.classList.remove(hideMusicClassName);
   }
+}
+
+function handleSelectedSong(song) {
+  toggleSongCard(song);
+  if (isTouchDevice()) setTimeout(() => toggleSongCard(song), [3000]);
 }
