@@ -93,7 +93,9 @@ function toggleSongCard(song) {
   }
 }
 
-function handleSelectedSong(song) {
-  toggleSongCard(song);
-  if (isTouchDevice()) setTimeout(() => toggleSongCard(song), [3000]);
+function handleSelectedSong(song, isOnClick) {
+  if (isTouchDevice() && isOnClick) {
+    toggleSongCard(song);
+    setTimeout(() => toggleSongCard(song), [3000]);
+  } else if (!isTouchDevice() && !isOnClick) toggleSongCard(song);
 }
