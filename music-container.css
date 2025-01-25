@@ -14,7 +14,7 @@
   position: absolute;
   display: flex;
   z-index: 2;
-  height: 100px;
+  height: 130px;
   gap: 10px;
   align-items: center;
   flex-direction: row;
@@ -28,7 +28,7 @@
 .music-card img {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  max-width: 100px;
+  max-width: 130px;
   object-fit: cover;
 }
 
