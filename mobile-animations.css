@@ -58,6 +58,15 @@
     overflow-y: auto;
   }
 
+  .animated-mail {
+    .body {
+      p {
+        margin-top: 7vh;
+        margin-left: -8vw;
+      }
+    }
+  }
+
   /* Cancel desktop animations */
   .open-letter .animated-mail,
   .open-letter .animated-mail .top-fold,

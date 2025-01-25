@@ -56,6 +56,14 @@ body {
     border-width: 0 0 100px 200px;
     border-color: transparent transparent #1e3335 transparent;
     z-index: 2;
+
+    p {
+      color: white;
+      transform: rotateZ(-90deg);
+      margin-top: 6vh;
+      margin-left: -2vw;
+      font-size: 20px;
+    }
   }
 
   .top-fold {
