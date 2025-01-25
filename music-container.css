@@ -8,7 +8,9 @@
 }
 
 .music-card {
-  background-color: white;
+  background-color: #1f2b3e;
+  border: white 1px solid;
+  color: white;
   position: absolute;
   display: flex;
   z-index: 2;
