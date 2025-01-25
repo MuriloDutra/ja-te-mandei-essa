@@ -94,8 +94,10 @@ function toggleSongCard(song) {
 }
 
 function handleSelectedSong(song, isOnClick) {
-  if (isTouchDevice() && isOnClick) {
+  const songAlreadyBeingDisplayed = document.querySelector(".show-music-card");
+
+  if (isTouchDevice() && isOnClick && !songAlreadyBeingDisplayed) {
     toggleSongCard(song);
-    setTimeout(() => toggleSongCard(song), [3000]);
+    setTimeout(() => toggleSongCard(song), [2300]);
   } else if (!isTouchDevice() && !isOnClick) toggleSongCard(song);
 }
