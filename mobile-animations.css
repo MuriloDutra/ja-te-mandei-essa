@@ -35,12 +35,12 @@
       z-index: 3;
     }
     100% {
-      bottom: -30vh;
+      bottom: -27vh;
       z-index: 5;
       width: 85vw;
       position: absolute;
       left: -15.5vw;
-      height: 85vh;
+      height: 80vh;
     }
   }
 
@@ -48,6 +48,7 @@
   h1,
   button {
     font-size: 16px;
+    line-height: 30px;
   }
 
   .content {
@@ -121,12 +122,12 @@
 
   @keyframes move-letter-backwards-mobile {
     0% {
-      bottom: -30vh;
+      bottom: -27vh;
       z-index: 5;
       width: 60vw;
       position: absolute;
       left: -18vw;
-      height: 85vh;
+      height: 80vh;
     }
     100% {
       z-index: 2;
