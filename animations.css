@@ -35,12 +35,12 @@
       z-index: 3;
     }
     100% {
-      bottom: -16vh;
+      bottom: -20vh;
       z-index: 5;
       width: 65vw;
       position: absolute;
       left: -25vw;
-      height: 55vh;
+      height: 75vh;
     }
   }
 
@@ -90,12 +90,12 @@
 
   @keyframes move-letter-backwards {
     0% {
-      bottom: -16vh;
+      bottom: -20vh;
       z-index: 5;
       width: 65vw;
       position: absolute;
       left: -25vw;
-      height: 55vh;
+      height: 75vh;
     }
     100% {
       z-index: 2;
